@@ -22,7 +22,10 @@ all :
 	@$(MAKE) libs
 	@$(MAKE) $(SERVER)
 	@$(MAKE) $(CLIENT)
-
+bonus:
+	@$(MAKE) libs
+	@$(MAKE) $(SERVER)
+	@$(MAKE) $(CLIENT)
 
 $(SERVER) : $(SERVER_O)
 	$(CC) $(CFLAGS) $(SERVER_O) $(PRINTF) -o $(SERVER)

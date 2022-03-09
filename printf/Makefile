@@ -10,7 +10,7 @@ INCLUDES=./ft_printf.h
 
 all: 	
 	@make re -C $(LIB_PATH)
-	@$(CC) -g3 $(CFLAGS) $(SRCS) -I$(INCLUDES)
+	@$(CC) -g3 $(CFLAGS) $(SRCS)
 	@ar rc $(NAME) $(OBJECTS) $(LIB_PATH)/*.o
 
 $(NAME):
